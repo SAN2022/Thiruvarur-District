@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thiruvarurdistrict.vercel.app/sitemap.xml
