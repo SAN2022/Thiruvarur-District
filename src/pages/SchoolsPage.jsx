@@ -6,6 +6,10 @@ export default function SchoolsPage() {
   const [school, setSchool] = useState([])
 
   useEffect(()=> {
+    useEffect(() => {
+    document.title = "Thiruvarur District Schools | Education Details";
+  }, []);
+
     fetch('https://api.jsonbin.io/v3/b/68d84250ae596e708ffdfd41')
       .then((res) => res.json())
       // .then((res) => console.log(res.record.schools))
@@ -20,7 +24,7 @@ export default function SchoolsPage() {
 
   return (
     <DirectoryPage
-      title="Schools"
+      title="Schools in Thiruvarur"
       apiUrl= '' // replace with your jsonbin URL
       data = {school}
     />

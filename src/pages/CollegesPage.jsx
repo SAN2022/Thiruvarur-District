@@ -1,10 +1,13 @@
 // src/pages/CollegesPage.jsx
 import { useEffect, useState } from "react";
-
 import DirectoryPage from "../components/DirectoryPage";
 
 export default function CollegesPage() {
   const [college, setCollege] = useState([])
+
+    useEffect(() => {
+      document.title = "Thiruvarur District Colleges | Education Details";
+    }, [])
   
     useEffect(()=> {
       fetch('https://api.jsonbin.io/v3/b/68d84250ae596e708ffdfd41')

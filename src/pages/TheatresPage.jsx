@@ -6,6 +6,10 @@ import DirectoryPage from "../components/DirectoryPage";
 export default function TheatresPage() {
   const [theatre, setTheatre] = useState([])
   
+    useEffect(() => {
+      document.title = "Thiruvarur District Theatres | Theatres Details";
+    }, []);
+
     useEffect(()=> {
       fetch('https://api.jsonbin.io/v3/b/68d84250ae596e708ffdfd41')
         .then((res) => res.json())

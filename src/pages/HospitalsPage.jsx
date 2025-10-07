@@ -6,6 +6,10 @@ import DirectoryPage from "../components/DirectoryPage";
 export default function HospitalsPage() {
   const [hospital, setHospital] = useState([])
   
+    useEffect(() => {
+      document.title = "Thiruvarur District Hospitals | Hospitals Details";
+    }, []);
+  
     useEffect(()=> {
       fetch('https://api.jsonbin.io/v3/b/68d84250ae596e708ffdfd41')
         .then((res) => res.json())
