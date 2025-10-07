@@ -1,6 +1,7 @@
 // src/components/LiveUpdates.jsx
 import { FiBell } from "react-icons/fi";
 import Jobs from "../pages/Jobs";
+import { Link } from "react-router-dom";
 
 export default function LiveUpdates() {
   return (
@@ -10,7 +11,7 @@ export default function LiveUpdates() {
         {/* <span>
           Live Updates (லேட்டஸ்ட் தகவல்கள்) <span className="text-red-400">NEW</span>
         </span> */}
-        
+
         <Link
           to={ Jobs }
           className="text-gray-600 hover:text-green-600"
