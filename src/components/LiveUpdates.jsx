@@ -2,8 +2,25 @@
 import { FiBell } from "react-icons/fi";
 import Jobs from "../pages/Jobs";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function LiveUpdates() {
+  const [jobs, setJobs] = useState([])
+
+  // useEffect(()=> {
+  // fetch('https://api.jsonbin.io/v3/b/68d84250ae596e708ffdfd41')
+  //       .then((res) => res.json())
+  //       // .then((res) => console.log(res.record.schools))
+  //       .then((res) => setJobs(res.record.jobs))
+  //       .then(() => console.log(jobs))
+  //       // .then(()=> console.log(jobs))
+        
+  //       // .then((res) => console.log(res.record.schools))
+  //       // .then((json) => setData(json))
+        
+  //       .catch((err) => console.error("Error fetching:", err));
+  // },[])
+
   return (
     <div className="bg-green-700 text-white text-center py-2">
       <div className="flex items-center justify-center space-x-2 font-semibold">
@@ -13,8 +30,8 @@ export default function LiveUpdates() {
         </span> */}
 
         <Link
-          to={ Jobs }
-          className="text-gray-600 hover:text-green-600"
+          to='/jobs'
+          className="text-yellow-400 hover:text-blue-200"
         >
           Job Updates
         </Link>

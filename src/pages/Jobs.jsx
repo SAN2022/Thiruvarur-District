@@ -1,9 +1,35 @@
 // src/pages/Jobs.jsx
+import { useEffect, useState } from "react";
+
 export default function Jobs() {
+  const [jobs, setJobs] = useState([])
+  
   useEffect(() => {
     document.title = "Thiruvarur District Job Updates";
   }, []);
 
+  useEffect(()=> {
+  fetch('https://api.jsonbin.io/v3/b/68d84250ae596e708ffdfd41')
+        .then((res) => res.json())
+        // .then((res) => console.log(res.record.schools))
+        // .then((res) => console.log(res.record.jobs))
+        .then((res) => setJobs(res.record.jobs))
+        .then(() => console.log(jobs))
+        // .then(() => console.log(jobs))
+        // .then(()=> console.log(jobs))
+        
+        // .then((res) => console.log(res.record.schools))
+        // .then((json) => setData(json))
+        
+        .catch((err) => console.error("Error fetching:", err));
+  },[])
+
+  const jobData = [
+    {
+      title: 'City union bank',
+      description: 'Anyone can apply for this bank job'
+    }
+  ]
   return (
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-4 text-green-700">

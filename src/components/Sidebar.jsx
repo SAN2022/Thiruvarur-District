@@ -14,6 +14,7 @@ const links = [
   { name: "Hospitals", icon: <FaHospital /> },
   { name: "Theatres", icon: <FiFilm /> },
   { name: "Hotels/Residencies", icon: <FiHome /> },
+  { name: "Jobs", icon: <FiHome /> },
   // { name: "Temples", icon: <FiMapPin /> },
 ];
 
