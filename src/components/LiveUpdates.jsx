@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function LiveUpdates() {
   return (
-    <div className="bg-green-700 text-white text-center py-2">
+    <div className="bg-green-700 text-white text-center py-6">
       <div className="flex items-center justify-center space-x-2 font-semibold">
         <FiBell className="text-red-300 animate-bounce" />
 
@@ -15,7 +15,7 @@ export default function LiveUpdates() {
 
         <Link
           to='/jobs'
-          className="text-yellow-400 hover:text-blue-200 cursor-not-allowed"
+          className="text-yellow-400 hover:text-white"
         >
           Job Updates
         </Link>
