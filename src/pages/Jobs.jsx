@@ -6,6 +6,12 @@ export default function Jobs() {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
+    const handleKeyDown = (e) => e.key === "Escape" && setSelectedImage(null);
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, []);
+
+  useEffect(() => {
     document.title = "Thiruvarur District Job Updates";
   }, []);
 
