@@ -44,7 +44,7 @@ export default function App() {
         <Route path="/hospitals" element={<HospitalsPage />} />
         <Route path="/theatres" element={<TheatresPage />} />
         <Route path="/hotelsresidencies" element={<HotelsPage />} />
-        {/* <Route path="/jobs" element={<Jobs />} /> */}
+        <Route path="/jobs" element={<Jobs />} />
       </Routes>
       <Footer />
     </div>
