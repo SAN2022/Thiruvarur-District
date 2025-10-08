@@ -26,7 +26,7 @@ export default function App() {
           element={
             <>
               <Carousel />
-              {/* <LiveUpdates /> */}
+              <LiveUpdates />
               <div className="flex flex-col lg:flex-row">
                 <Sidebar />
                 <main className="flex-1 px-4 md:px-8 lg:px-12 py-6 space-y-8">

@@ -22,7 +22,7 @@ export default function LiveUpdates() {
   // },[])
 
   return (
-    <div className="bg-green-700 text-white text-center py-2">
+    <div className="bg-green-700 text-white text-center py-2 cursor-not-allowed">
       <div className="flex items-center justify-center space-x-2 font-semibold">
         <FiBell className="text-red-300 animate-bounce" />
         {/* <span>
